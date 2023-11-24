@@ -15,7 +15,7 @@
 }
 
 .input_group .input {
-    width: clamp(19.5rem, 80vw, 100%);
+    width: clamp(19.5rem, 90vw, 100%);
     height: 3rem;
     border-radius: 0.3rem;
     border: none;
