@@ -13,9 +13,10 @@ const Input_util = (props) => {
         const data = { identifier: props.identifier, value: value }
 
         if (props.identifier === 'people' && value === '0') {
-            console.log('people cannot be zero')
+            // console.log('people cannot be zero')
             return;
         }
+        if(isNaN(parseInt(value)) && value!='')return;
         // console.log(value)
         props.onDataRecieve(data);
         // console.log(value)
@@ -29,8 +30,9 @@ const Input_util = (props) => {
                 <div className={classes.label_group}>
                     <label>{props.children}</label>
                     {props.identifier === 'people' && value === '0' && <label className={classes.error_label}>can't be zero</label>}
+                    {isNaN(parseInt(value)) && value!=='' && <label className={classes.error_label}>numbers only!</label>}
                 </div>
-                <input className ={`${classes.input} ${(props.identifier==='people' && value==='0')?classes.error_input:''}`} type="number" placeholder='$'
+                <input type="text" className ={`${classes.input} ${(props.identifier==='people' && value==='0')?classes.error_input:''}`}  placeholder='$'
                     value={value}
                     onChange={(event) => changeHandler(props.identifier, event.target.value)}
                 //  onChange={(event)=>focusHandeler(props.identifier, event.target.value)}
