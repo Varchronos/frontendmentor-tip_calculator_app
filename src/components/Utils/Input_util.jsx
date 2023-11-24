@@ -32,10 +32,11 @@ const Input_util = (props) => {
                     {props.identifier === 'people' && value === '0' && <label className={classes.error_label}>can't be zero</label>}
                     {isNaN(parseInt(value)) && value!=='' && <label className={classes.error_label}>numbers only!</label>}
                 </div>
-                <input type="text" className ={`${classes.input} ${(props.identifier==='people' && value==='0')?classes.error_input:''}`}  placeholder='$'
+                <input type="text" 
+                    className={`${classes.input} ${(props.identifier==='people' && value==='0')?classes.error_input:''}`}  placeholder='$'
                     value={value}
                     onChange={(event) => changeHandler(props.identifier, event.target.value)}
-                //  onChange={(event)=>focusHandeler(props.identifier, event.target.value)}
+                    inputMode="numeric"
                 />
             </div>
         </>
