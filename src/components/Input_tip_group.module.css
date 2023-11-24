@@ -7,6 +7,7 @@
     font-size: 1rem;
     font-weight: 700;
     margin: 1.5rem 0 1rem 0;
+    user-select: none;
 }
 
 .percentage_button_group{
@@ -15,6 +16,7 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: space-around;
 gap: 1rem;
+margin-bottom: 0.6rem;
 }
 
 .btn{
@@ -38,6 +40,7 @@ gap: 1rem;
 .btn:hover{
     background-color: #C5E4E7;
     color: #00494D;
+    cursor: pointer;
 }
 
 .active{

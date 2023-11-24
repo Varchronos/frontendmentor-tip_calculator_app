@@ -33,4 +33,5 @@
 
 .btn:hover{
   background-color: #C5E4E7;
+  cursor: pointer;
 }

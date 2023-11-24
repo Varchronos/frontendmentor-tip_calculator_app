@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3.6rem;
+    user-select: none;
 }
 
 .amount_group h2{
