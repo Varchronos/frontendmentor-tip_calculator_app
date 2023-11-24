@@ -1,0 +1,36 @@
+.output_container {
+  /* width: 25.875rem;
+  height: 26.125rem; */
+  width: clamp(20rem, 90vw, 25.8rem);
+  background-color: #00494d;
+  padding: 4.9rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  border-radius: 20px;
+}
+
+.btn {
+  align-self: center;
+  width: clamp(18rem, 80vw, 21rem);
+  margin-top: 1rem;
+  padding: 0.6rem 0;
+  color: #00494d;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  border-radius: 5px;
+  background: #26C0AB;
+  border: none;
+}
+
+@media screen and (max-width:926px)
+{
+  .output_container{
+    margin-bottom: 2rem;
+  }
+}
+
+.btn:hover{
+  background-color: #C5E4E7;
+}

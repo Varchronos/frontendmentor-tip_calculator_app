@@ -1,0 +1,32 @@
+.amount_group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.6rem;
+}
+
+.amount_group h2{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.amount_group h3{
+    color: #7F9C9F;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.amount_group h1{
+    color: #26C0AB;
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+
+@media screen and (max-width:926px)
+{
+    .amount_group h1{
+        font-size: 2.5rem;
+        letter-spacing: -0.1rem;
+    }
+}

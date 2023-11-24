@@ -1,0 +1,30 @@
+.input_group{
+    display: flex;
+    flex-direction: column;  
+}
+.input_group label{
+    margin-bottom: 0.44rem;
+    font-weight: 700;
+}
+
+.input_group input{
+    width: clamp(19.5rem, 80vw, 100%);
+    height: 3rem;
+    border-radius: 0.625rem;
+    border: none;
+    background-color:#F4FAFA ;
+    padding: 0 1.2rem ;
+    text-align: right;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00494D;
+}
+
+input:focus{
+    outline: none;
+    border: 2px #26C0AB solid;
+    
+    color: #00494D;
+}
